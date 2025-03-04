@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+body{
+background: linear-gradient(black, #38073b);
+font-family: 'Acme', sans-serif;
+}
+
+.paralax{
+position: relative;
+width: 58.6%;
+height: 60vh;
+padding: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.paralax::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, grey, transparent);
+  z-index: 1000;
+}
+.paralax img{
+position: absolute;
+top: a;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#text{
+position: absolute;
+font-size: 5.4em;
+color: white;
+letter-spacing: 2px;
+text-align: center;
+text-shadow: 3px 5px 10px grey;
+}
+#button{
+  position: absolute;
+  font-size: 1em;
+  color: black;
+  background-color: white;
+  padding: 5px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  transform: translateY(120px);
+}
+
+.desk{
+  position: relative;
+  padding: 10em;
+  background-color: grey;
+}
+.desk p {
+  font-size: 1em;
+}
